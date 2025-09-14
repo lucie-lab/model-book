@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="assets/css/style.css">
   <meta charset="UTF-8">
   <title>Contact - Modeling Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,17 +14,28 @@
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button id="lang-switch">FR</button>
     </nav>
   </header>
   <main>
-    <h2>Contact me</h2>
-    <p>Email: your.email@example.com</p>
-    <p>Instagram: @yourhandle</p>
-    <!-- You can add a contact form here later -->
+    <section class="card">
+      <h2 class="accent">Contact me</h2>
+      <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="socials">
+        <a href="https://instagram.com/yourhandle" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
+        <a href="mailto:your.email@example.com"><img src="assets/img/email.svg" alt="Email" /></a>
+      </div>
+    </section>
   </main>
   <footer>
-    <p>&copy; 2025 Lucie</p>
+    &copy; 2025 Lucie
   </footer>
+  <script src="assets/js/lang.js"></script>
 </body>
 </html>
