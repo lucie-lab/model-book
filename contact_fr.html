@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Portfolio Modèle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index_fr.html">Accueil</a>
+      <a href="gallery_fr.html">Galerie</a>
+      <a href="about_fr.html">À propos</a>
+      <a href="contact_fr.html" class="active">Contact</a>
+      <button id="lang-switch">EN</button>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2 class="accent">Contactez-moi</h2>
+      <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="socials">
+        <a href="https://instagram.com/yourhandle" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
+        <a href="mailto:your.email@example.com"><img src="assets/img/email.svg" alt="Email" /></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Lucie
+  </footer>
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>
